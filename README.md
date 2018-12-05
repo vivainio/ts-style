@@ -31,9 +31,3 @@ export class FooUtil {
 - Prefer promises to RxJS observables
 - Prefer "then" to async/await for now (because async/await does not give perfect source maps)
 - When using observables do NOT store subscriptions anywhere. Use automatic disposers
-
-
-```
-
-
-
