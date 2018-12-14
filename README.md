@@ -26,8 +26,14 @@ export class FooUtil {
 - Register observers in ngOnInit
 - Avoid ngOnChanges when you can
 
+# Angular templates
+
+- Prefer {{foo}} to [innerHtml]
+
 # Misc
 
 - Prefer promises to RxJS observables
 - Prefer "then" to async/await for now (because async/await does not give perfect source maps)
 - When using observables do NOT store subscriptions anywhere. Use automatic disposers
+- Avoid lodash for things that are natively supported (map, filter, some, foreach)
+- Prefer  `for (const it of mylist) { }` to .forEach
